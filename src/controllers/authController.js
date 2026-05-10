@@ -20,7 +20,6 @@ const sendRealOTP = async (phone, otp) => {
         msg: message,
       },
     });
-    console.log(`✅ CUSTOM OTP SENT to ${etPhone} → ${otp}`);
   } catch (err) {
     console.error('❌ Geez SMS failed:', err.response?.data || err.message);
   }

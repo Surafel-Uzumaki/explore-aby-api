@@ -18,9 +18,9 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Import routes
-const authRoutes = require('./routes/authRoutes');
-const destinationRoutes = require('./routes/destinationRoutes');
-const bookingRoutes = require('./routes/bookingRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const destinationRoutes = require('./src/routes/destinationRoutes');
+const bookingRoutes = require('./src/routes/bookingRoutes');
 
 // Use routes
 app.use('/api/auth', authRoutes);
